@@ -1,0 +1,176 @@
+/*---------------------------------------------------------------------------*/
+/*------------------                ALLGEMEIN            --------------------*/
+/*---------------------------------------------------------------------------*/
+
+
+html {
+  font-size: 100%;
+  min-width: 320px;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  
+  margin: 0;
+  padding: 0;
+  
+  overflow: hidden; /*!!!!!!!!!!!!!!!!!!!*/
+
+  
+}
+
+
+/*---------------------------------------------------------------------------*/
+/*------------------                 HEAD                --------------------*/
+/*---------------------------------------------------------------------------*/
+
+
+header {
+  width: 100vw;
+  height: 100vh;
+  min-width: 320px;
+
+}
+
+.header__img {
+  object-fit: cover;
+  position: absolute;
+  top: -40px;
+
+  height: 120%;
+  width: 110%;
+  min-width: 330px;
+  
+  z-index: 1;
+  
+  user-select: none;
+  display: none; 
+}
+
+.header__logo {
+  position: absolute;
+  z-index: 2;
+
+  margin-left: 2%;
+  margin-top: 2%;
+
+  font-family: montserrat, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 3.6rem;
+  color: white;
+  cursor: pointer;
+}
+
+.header__nav, .header__nav__kontakt {
+  position: absolute;
+  z-index: 2;
+
+  padding: 0;
+  margin-left: 2%;
+  
+  list-style: none;
+
+}
+
+.header__logo,
+.header__nav > li > a, 
+.header__nav__kontakt > li > a {
+  text-decoration: none;
+  font-family: montserrat, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 3.6rem;
+  color: white;
+
+  cursor: pointer;
+}
+
+.header__nav > li {
+  margin-bottom: 20px;
+  
+}
+
+.header__nav {
+  top: 35%;
+}
+
+.header__nav__kontakt {
+  bottom: 10px;
+}
+
+.header__logo::after,
+.header__nav li::after, 
+.header__nav__kontakt li::after {
+  content:"";
+  position: absolute;
+  display:block;
+  width: 0%;
+  left:0;
+  border-bottom: 4px solid #ffffff;
+  transition: 0.4s ease;
+
+}
+
+.header__logo:hover::after,
+.header__nav li:first-child:hover::after, 
+.header__nav li:last-child:hover::after,
+.header__nav__kontakt li:hover::after {
+  width:100%;
+
+}
+
+.header__nav li:not(:first-child):not(:last-child):hover::after {
+  width: 120px;
+}
+
+
+
+
+
+/*---------------------------------------------------------------------------*/
+/*------------------                  FONTS              --------------------*/
+/*---------------------------------------------------------------------------*/
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: 
+    local('Montserrat Regular'), 
+    local('Montserrat-Regular'), 
+    url('../../fonts/Montserrat/Montserrat-Regular.ttf') 
+    format('truetype');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

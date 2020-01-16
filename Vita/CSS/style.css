@@ -1,0 +1,249 @@
+/*---------------------------------------------------------------------------*/
+/*------------------                ALLGEMEIN            --------------------*/
+/*---------------------------------------------------------------------------*/
+
+
+html {
+  font-size: 100%;
+  min-width: 320px;
+}
+body {
+  height: 100vh;
+  width: 99vw;
+  
+  margin: 0;
+  padding: 0;
+  
+  
+
+  
+}
+
+
+/*---------------------------------------------------------------------------*/
+/*------------------                HEADER               --------------------*/
+/*---------------------------------------------------------------------------*/
+
+
+header {
+  width: 100vw;
+  height: 100vh;
+  min-width: 320px;
+
+}
+
+.header__logo {
+  position: absolute;
+  z-index: 2;
+
+  margin-left: 2%;
+  margin-top: 2%;
+
+  
+  
+}
+
+.header__logo a {
+  text-decoration: none;
+  font-family: montserrat, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 3.6rem;
+  color: black;
+}
+
+.header__nav {
+  position: absolute;
+  z-index: 2;
+
+  padding: 0;
+  margin-left: 2%;
+  
+  list-style: none;
+
+}
+
+.header__nav > li > a {
+  text-decoration: none;
+  font-family: montserrat, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 3.6rem;
+  color: black;
+
+  cursor: pointer;
+}
+
+.header__nav > li {
+  margin-bottom: 20px;
+  width: 20vw;
+}
+
+.header__nav {
+  top: 35%;
+  position: fixed;
+}
+.nav__media__back {
+  display: none;
+}
+.header__nav > :first-child, .header__nav > :last-child { 
+  visibility: hidden;
+  color: white;
+}
+
+header h1::after,
+.header__nav li:after, 
+.nav__media__back li:after {
+  content:"";
+  position: absolute;
+  display:block;
+  width: 0%;
+  left:0;
+  border-bottom: 4px solid black;
+  transition: 0.4s ease;
+
+}
+
+header h1:hover::after {
+  width:100%;
+}
+
+.header__nav li:hover::after {
+  width:120px;
+
+}
+
+
+
+/*---------------------------------------------------------------------------*/
+/*------------------                 VITA                --------------------*/
+/*---------------------------------------------------------------------------*/
+
+
+.main {
+  position: absolute;
+  top: 35%;
+  left: 300px;
+  margin-bottom: 115px;
+}
+
+@media screen and (max-width: 805px) {
+  .main {
+    position: absolute;
+    top: 35%;
+    left: 250px;
+    margin-bottom: 115px;
+  }
+}
+
+@media screen and (max-width: 705px) {
+  .main {
+    position: absolute;
+    top: 35%;
+    left: 150px;
+    margin-bottom: 115px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    position: absolute;
+    top: 35%;
+    left: 70px;
+    margin-bottom: 115px;
+    
+  }
+  .nav__this__page {
+    display: none;
+  }
+  .nav__media__back {
+    display: block;
+  }
+  .header__nav li:hover:after {
+    width:40px;
+  
+  }
+}
+/*---------------------------------------------------------------------------*/
+/*------------------                 TABLE               --------------------*/
+/*---------------------------------------------------------------------------*/
+
+table {
+  font-family: montserrat, Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  table-layout: fixed;
+  
+}
+
+table h6 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+table p {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+
+.main__vita__table__cell {
+  padding: 15px 0;
+  margin: 0;
+  
+  width: 280px;
+}
+
+.main__vita1, .main__vita2 {
+  float: left;
+}
+
+.main__vita2 .main__vita__table__cell{
+  vertical-align: top;
+}
+
+/*---------------------------------------------------------------------------*/
+/*------------------                  FONTS              --------------------*/
+/*---------------------------------------------------------------------------*/
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: 
+    local('Montserrat Regular'), 
+    local('Montserrat-Regular'), 
+    url('../../fonts/Montserrat/Montserrat-Regular.ttf') 
+    format('truetype');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
